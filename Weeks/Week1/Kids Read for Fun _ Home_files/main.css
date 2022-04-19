@@ -1,0 +1,40 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+html{
+  
+}
+
+
+header a{
+    color: #FAEBD7;
+    font-family: 'Lora', serif;
+}
+
+nav active a{
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1055px) {
+
+
+
+
+}
