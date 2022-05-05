@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+nav {
+  border-top: solid #d0d0d0 1px;
+  border-bottom: solid #d0d0d0 1px;
+}
+
+nav a:hover {
+  background-color: #00ddff;
+}
+
+nav a:active {
+  background-color: #DEB887;
+}
+
+@media (min-width: 900px) {
+  nav {
+    border: none;
+    border-top: solid #d0d0d0 1px;
+  }
+}
+
+.post-content {
+  border-top: solid #d0d0d0 1px;
+  border-bottom: solid #d0d0d0 1px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+@media (min-width: 900px) {
+  .post-content {
+    border: none;
+    border-bottom: solid #d0d0d0 1px;
+  }
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  list-style: none;
+  justify-items: center;
+  gap: .5rem;
+}
+
+@media (min-width: 900px) {
+  ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+header a {
+  font-family: 'Lora', serif;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+hr {
+  display: none;
+}
+
+li a {
+  font-size: 1.25rem;
+}
+
+li a, section a {
+  color: #666;
+}
+
+.post-date {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: right;
+  margin: 2rem 0 .5rem 0;
+}
+
+p {
+  font-family: sans-serif;
+  max-width: 600px;
+}
+/*# sourceMappingURL=style.css.map */
