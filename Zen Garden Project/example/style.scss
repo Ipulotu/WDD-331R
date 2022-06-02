@@ -1,0 +1,21 @@
+@use "variables"; //this puts all the variables in the global namespace.
+@use 'atoms';
+//@use 'molecules';
+//@use 'organisms' as o;
+
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: red;
+  padding: 5%;
+}
+
+body {
+  font-family: variables.$fonts-body;
+  font-size: 85%;
+  color: $text-dark;
+  background-color: $primary;
+  margin: 0;
+  padding: 1em;
+}
