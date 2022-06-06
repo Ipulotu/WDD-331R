@@ -1,0 +1,54 @@
+
+.card-grid{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* horizontal cards */
+.row-grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.row-grid .card {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+
+.row-grid .card img{
+    max-height:150px;
+}
+
+
+/*Vertical Cards */
+
+.col-grid{
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 2500px;
+    max-width: 650px;
+    margin: auto;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.col-grid .card {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.col-grid .card img{
+    max-width: 200px;
+    height: 100%;
+}
