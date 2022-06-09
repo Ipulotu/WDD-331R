@@ -9,7 +9,7 @@
 .row-grid{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: right;
     gap: 1rem;
     margin: 1rem;
 }
@@ -20,6 +20,7 @@
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
+    flex-grow: 1;
     
 }
 
@@ -46,6 +47,7 @@
     border: 2px solid black;
     border-radius: 10px;
     text-align: center;
+    flex-grow: 1;
 }
 
 .col-grid .card img{
