@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..800,0..1,0..1,0..1&display=swap");
+:root {
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --font-color: #333;
+  /* set variation axis values */
+  --mono: "MONO" 0;
+  /* Monospace: Sans (natural-width) or Mono (fixed-width) */
+  --casl: "CASL" 0;
+  /* Casual: Linear to Casual */
+  --wght: 300;
+  /* Weight: Light to ExtraBlack; usually set with `font-weight` */
+  --slnt: 0deg;
+  /* Slant: 0 to -15 degrees, auto cursive at -14 */
+  --crsv: "CRSV" 0.5;
+  /* Cursive: always roman (0), auto substitution (.5), or always cursive (1) */
+}
+
+* {
+  font-weight: var(--wght);
+  font-style: oblique var(--slnt);
+  font-variation-settings: var(--mono), var(--casl), var(--crsv);
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  color: var(--font-color);
+  font-family: Recursive, sans-serif;
+}
+
+span {
+  --wght: 500;
+}
+
+header {
+  display: flex;
+  justify-items: right;
+}
+header span {
+  padding: 1rem;
+}
+header p {
+  border-bottom: 2px dotted black;
+  padding: 0.3rem;
+  flex-grow: 4;
+}
+
+main {
+  margin: auto;
+  max-width: 1000px;
+}
+main > p {
+  margin-top: 0.75rem;
+  --casl: "CASL" 1 ;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+div > span {
+  margin: 1rem;
+  padding: 0.5rem;
+  border: 3px solid black;
+  border-radius: 25px;
+}
+div p {
+  border-left: 2px solid black;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+}
+
+h2 {
+  font-size: var(--s2);
+  --wght: 700;
+  margin: 0.75rem 0 0.75rem 0;
+  --mono: "MONO" .5;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
